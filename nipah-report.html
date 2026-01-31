@@ -102,78 +102,9 @@
       <!-- 日本外務省 渡航危険度マップ -->
       <section class="mb-10">
         <h3 class="text-lg font-semibold mb-4 text-blue-400">日本外務省 海外安全情報 — 渡航危険度マップ</h3>
-        <div class="bg-gray-800/60 border border-gray-700 rounded-lg p-4 overflow-x-auto">
-          <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto" style="min-width:500px;">
-            <!-- Sea background -->
-            <rect width="800" height="500" fill="#1e293b"/>
-
-            <!-- Pakistan -->
-            <path d="M30,30 L90,20 L120,60 L130,100 L140,140 L130,180 L110,220 L80,240 L50,200 L30,160 L20,100 Z" fill="#e6b422" stroke="#374151" stroke-width="1"/>
-            <!-- Pakistan Lv3-4 border region -->
-            <path d="M30,30 L60,25 L50,60 L30,70 Z" fill="#d45040" stroke="#374151" stroke-width="0.5"/>
-            <path d="M30,70 L50,60 L40,90 L25,85 Z" fill="#e08040" stroke="#374151" stroke-width="0.5"/>
-
-            <!-- India -->
-            <path d="M110,220 L130,180 L140,140 L180,110 L240,100 L300,90 L350,100 L390,120 L420,160 L430,200 L440,260 L420,320 L380,370 L340,410 L300,430 L280,420 L260,380 L240,340 L200,310 L160,290 L120,260 Z" fill="#e6b422" stroke="#374151" stroke-width="1"/>
-            <!-- India - darker patches (West Bengal / NE region) -->
-            <path d="M350,100 L390,120 L400,150 L380,170 L350,160 L340,130 Z" fill="#d4a020" stroke="none"/>
-
-            <!-- Nepal -->
-            <path d="M240,100 L300,90 L340,95 L350,100 L340,115 L290,115 L250,112 Z" fill="#e6b422" stroke="#374151" stroke-width="1"/>
-
-            <!-- Bhutan -->
-            <path d="M350,95 L390,88 L405,95 L395,110 L360,110 L350,100 Z" fill="#e6b422" stroke="#374151" stroke-width="1"/>
-
-            <!-- Bangladesh -->
-            <path d="M390,120 L420,110 L435,130 L430,160 L420,160 L400,150 Z" fill="#e6b422" stroke="#374151" stroke-width="1"/>
-            <path d="M420,110 L435,130 L430,120 Z" fill="#d4a020" stroke="none"/>
-
-            <!-- Myanmar -->
-            <path d="M440,100 L470,80 L510,90 L530,130 L540,180 L535,230 L520,280 L500,320 L480,350 L460,340 L450,300 L440,260 L435,200 L440,140 Z" fill="#d4a020" stroke="#374151" stroke-width="1"/>
-            <!-- Myanmar Lv3 regions -->
-            <path d="M440,100 L470,80 L490,90 L480,120 L460,130 L440,120 Z" fill="#e08040" stroke="none"/>
-            <path d="M470,280 L500,320 L480,350 L460,340 L450,300 Z" fill="#e08040" stroke="none"/>
-
-            <!-- Thailand -->
-            <path d="M520,280 L540,260 L560,250 L570,280 L560,320 L540,360 L530,400 L520,430 L510,420 L515,380 L510,340 L500,320 Z" fill="#e6b422" stroke="#374151" stroke-width="1"/>
-
-            <!-- Laos -->
-            <path d="M540,180 L570,160 L600,170 L610,200 L600,230 L580,250 L560,250 L540,260 L535,230 Z" fill="#e6b422" stroke="#374151" stroke-width="1"/>
-
-            <!-- Cambodia -->
-            <path d="M560,250 L580,250 L610,260 L630,290 L630,330 L610,350 L580,350 L560,340 L550,320 L560,290 Z" fill="#e6b422" stroke="#374151" stroke-width="1"/>
-            <!-- Cambodia Lv2 areas -->
-            <path d="M560,250 L580,250 L590,280 L570,290 L560,280 Z" fill="#d4a020" stroke="none"/>
-            <path d="M610,300 L630,330 L610,350 L600,330 Z" fill="#d4a020" stroke="none"/>
-
-            <!-- Vietnam (not colored - white/outline only) -->
-            <path d="M600,170 L620,150 L640,160 L650,190 L640,220 L630,250 L630,290 L640,330 L650,370 L660,400 L650,420 L630,400 L620,370 L630,330 L630,290 L610,260 L600,230 L610,200 Z" fill="#374151" stroke="#4b5563" stroke-width="1"/>
-
-            <!-- Country Labels -->
-            <text x="60" y="140" fill="white" font-size="13" font-weight="bold" text-anchor="middle" font-family="sans-serif">パキスタン</text>
-            <text x="280" y="280" fill="white" font-size="15" font-weight="bold" text-anchor="middle" font-family="sans-serif">インド</text>
-            <text x="290" y="104" fill="white" font-size="11" font-weight="bold" text-anchor="middle" font-family="sans-serif">ネパール</text>
-            <text x="378" y="104" fill="white" font-size="10" font-weight="bold" text-anchor="middle" font-family="sans-serif">ブータン</text>
-            <text x="418" y="145" fill="white" font-size="10" font-weight="bold" text-anchor="middle" font-family="sans-serif">バングラ<tspan x="418" dy="13">デシュ</tspan></text>
-            <text x="490" y="220" fill="white" font-size="13" font-weight="bold" text-anchor="middle" font-family="sans-serif">ミャンマー</text>
-            <text x="575" y="210" fill="white" font-size="11" font-weight="bold" text-anchor="middle" font-family="sans-serif">ラオス</text>
-            <text x="530" y="360" fill="white" font-size="11" font-weight="bold" text-anchor="middle" font-family="sans-serif">タイ</text>
-            <text x="600" y="310" fill="white" font-size="11" font-weight="bold" text-anchor="middle" font-family="sans-serif">カンボジア</text>
-            <text x="645" y="300" fill="#9ca3af" font-size="11" font-weight="bold" text-anchor="middle" font-family="sans-serif">ベトナム</text>
-
-            <!-- Legend -->
-            <rect x="620" y="20" width="170" height="120" rx="6" fill="#111827" fill-opacity="0.85" stroke="#374151" stroke-width="1"/>
-            <text x="705" y="40" fill="#9ca3af" font-size="11" text-anchor="middle" font-family="sans-serif" font-weight="bold">外務省 危険度レベル</text>
-            <rect x="632" y="50" width="16" height="12" rx="2" fill="#e6b422"/>
-            <text x="656" y="60" fill="#d4d4d8" font-size="10" font-family="sans-serif">Lv1 十分注意</text>
-            <rect x="632" y="70" width="16" height="12" rx="2" fill="#d4a020"/>
-            <text x="656" y="80" fill="#d4d4d8" font-size="10" font-family="sans-serif">Lv2 不要不急の渡航中止</text>
-            <rect x="632" y="90" width="16" height="12" rx="2" fill="#e08040"/>
-            <text x="656" y="100" fill="#d4d4d8" font-size="10" font-family="sans-serif">Lv3 渡航中止勧告</text>
-            <rect x="632" y="110" width="16" height="12" rx="2" fill="#d45040"/>
-            <text x="656" y="120" fill="#d4d4d8" font-size="10" font-family="sans-serif">Lv4 退避勧告</text>
-          </svg>
-          <p class="text-xs text-gray-500 mt-3 text-center">出典: 外務省 海外安全ホームページ（概略図・実際の危険度は公式サイトで確認してください）</p>
+        <div class="bg-gray-800/60 border border-gray-700 rounded-lg p-4">
+          <img src="map.png" alt="日本外務省 海外安全情報 渡航危険度マップ" class="w-full h-auto rounded">
+          <p class="text-xs text-gray-500 mt-3 text-center">出典: 外務省 海外安全ホームページ</p>
         </div>
       </section>
 

@@ -13,47 +13,47 @@
 </head>
 <body class="bg-gray-900 text-white min-h-screen">
   <!-- Header -->
-  <header class="fixed top-0 left-0 right-0 bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-700">
-    <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="index.html" class="text-gray-400 hover:text-white transition-colors text-sm flex items-center gap-1">
+  <header id="header" class="fixed top-0 left-0 right-0 bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-700">
+    <div id="header-inner" class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a id="link-back" href="index.html" class="text-gray-400 hover:text-white transition-colors text-sm flex items-center gap-1">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
         スケジュールに戻る
       </a>
-      <h1 class="text-lg font-bold text-center bg-gradient-to-r from-red-400 via-yellow-400 to-red-400 bg-clip-text text-transparent">
+      <h1 id="header-title" class="text-lg font-bold text-center bg-gradient-to-r from-red-400 via-yellow-400 to-red-400 bg-clip-text text-transparent">
         NiV Report
       </h1>
-      <div class="w-24"></div>
+      <div id="header-spacer" class="w-24"></div>
     </div>
   </header>
 
   <!-- Main Content -->
-  <main class="pt-24 pb-12">
-    <div class="max-w-4xl mx-auto px-4">
+  <main id="main" class="pt-24 pb-12">
+    <div id="main-container" class="max-w-4xl mx-auto px-4">
 
       <!-- Title Section -->
-      <div class="text-center mb-10">
-        <div class="text-4xl mb-4">&#x1F9A0;</div>
-        <h1 class="text-2xl font-bold mb-2">ニパウイルス（NiV）最新状況レポート</h1>
-        <p class="text-gray-400 text-sm">2026年1月31日時点</p>
+      <div id="hero" class="text-center mb-10">
+        <div id="hero-icon" class="text-4xl mb-4">&#x1F9A0;</div>
+        <h1 id="title" class="text-2xl font-bold mb-2">ニパウイルス（NiV）最新状況レポート</h1>
+        <p id="title-date" class="text-gray-400 text-sm">2026年1月31日時点</p>
       </div>
 
       <!-- Section 1: 直近の発生状況 -->
-      <section class="mb-10">
-        <h2 class="text-xl font-bold mb-4 border-l-4 border-red-500 pl-3">1. 直近の発生状況（インド・西ベンガル州）</h2>
-        <div class="bg-gray-800/60 border border-gray-700 rounded-lg p-6">
-          <p class="text-gray-300 mb-4">
+      <section id="section-1" class="mb-10">
+        <h2 id="section-1-title" class="text-xl font-bold mb-4 border-l-4 border-red-500 pl-3">1. 直近の発生状況（インド・西ベンガル州）</h2>
+        <div id="section-1-body" class="bg-gray-800/60 border border-gray-700 rounded-lg p-6">
+          <p id="section-1-intro" class="text-gray-300 mb-4">
             2026年1月中旬、インド東部の西ベンガル州で発生した症例について、当局は<span class="text-yellow-400 font-semibold">「迅速な封じ込めに成功した」</span>と評価しています。
           </p>
-          <ul class="space-y-3">
-            <li class="flex items-start gap-2">
+          <ul id="section-1-list" class="space-y-3">
+            <li id="section-1-confirmed" class="flex items-start gap-2">
               <span class="text-red-400 mt-1">&#x25CF;</span>
               <div><span class="text-white font-semibold">確定症例:</span> <span class="text-gray-300">西ベンガル州の看護師2名（1月27日に公式発表）。</span></div>
             </li>
-            <li class="flex items-start gap-2">
+            <li id="section-1-contacts" class="flex items-start gap-2">
               <span class="text-red-400 mt-1">&#x25CF;</span>
               <div><span class="text-white font-semibold">接触者調査:</span> <span class="text-gray-300">濃厚接触者を含む196名を追跡し、RT-PCR検査を実施。1月27日時点で<span class="text-green-400 font-semibold">全員の陰性</span>を確認済み。</span></div>
             </li>
-            <li class="flex items-start gap-2">
+            <li id="section-1-status" class="flex items-start gap-2">
               <span class="text-red-400 mt-1">&#x25CF;</span>
               <div><span class="text-white font-semibold">現状:</span> <span class="text-gray-300">二次感染の拡大は見られず、コミュニティ内での持続的なヒトからヒトへの感染リスクは極めて低い状況です。</span></div>
             </li>
@@ -62,34 +62,34 @@
       </section>
 
       <!-- Section 2: 主要国・機関の見解と対応 -->
-      <section class="mb-10">
-        <h2 class="text-xl font-bold mb-4 border-l-4 border-blue-500 pl-3">2. 主要国・機関の見解と対応</h2>
-        <div class="overflow-x-auto">
-          <table class="w-full text-sm border-collapse">
-            <thead>
+      <section id="section-2" class="mb-10">
+        <h2 id="section-2-title" class="text-xl font-bold mb-4 border-l-4 border-blue-500 pl-3">2. 主要国・機関の見解と対応</h2>
+        <div id="section-2-table-wrap" class="overflow-x-auto">
+          <table id="table-response" class="w-full text-sm border-collapse">
+            <thead id="table-response-head">
               <tr class="border-b border-gray-600">
                 <th class="text-left py-3 px-4 text-gray-400 font-semibold">機関・国</th>
                 <th class="text-left py-3 px-4 text-gray-400 font-semibold">ステータス</th>
                 <th class="text-left py-3 px-4 text-gray-400 font-semibold">主な対応・見解</th>
               </tr>
             </thead>
-            <tbody>
-              <tr class="border-b border-gray-700/50">
+            <tbody id="table-response-body">
+              <tr id="row-who" class="border-b border-gray-700/50">
                 <td class="py-3 px-4 font-semibold text-white">WHO</td>
                 <td class="py-3 px-4"><span class="bg-green-500/20 text-green-400 px-2 py-1 rounded text-xs font-semibold">リスク「低」</span></td>
                 <td class="py-3 px-4 text-gray-300">国際的な拡大リスクは低い。渡航・貿易制限は「不要」と勧告。</td>
               </tr>
-              <tr class="border-b border-gray-700/50">
+              <tr id="row-japan" class="border-b border-gray-700/50">
                 <td class="py-3 px-4 font-semibold text-white">日本政府</td>
                 <td class="py-3 px-4"><span class="bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded text-xs font-semibold">注意喚起</span></td>
                 <td class="py-3 px-4 text-gray-300">外務省スポット情報を発出。渡航警戒レベルの引き上げはなし。</td>
               </tr>
-              <tr class="border-b border-gray-700/50">
+              <tr id="row-india" class="border-b border-gray-700/50">
                 <td class="py-3 px-4 font-semibold text-white">インド政府</td>
                 <td class="py-3 px-4"><span class="bg-green-500/20 text-green-400 px-2 py-1 rounded text-xs font-semibold">封じ込め済</span></td>
                 <td class="py-3 px-4 text-gray-300">西ベンガル州での監視継続。院内感染防止プロトコルの再徹底。</td>
               </tr>
-              <tr class="border-b border-gray-700/50">
+              <tr id="row-vietnam" class="border-b border-gray-700/50">
                 <td class="py-3 px-4 font-semibold text-white">ベトナム政府</td>
                 <td class="py-3 px-4"><span class="bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded text-xs font-semibold">監視強化</span></td>
                 <td class="py-3 px-4 text-gray-300">タンソンニャット空港等での検温、インド渡航者への健康申告義務化。</td>
@@ -100,20 +100,20 @@
       </section>
 
       <!-- 日本外務省 渡航危険度マップ -->
-      <section class="mb-10">
-        <h3 class="text-lg font-semibold mb-4 text-blue-400">日本外務省 海外安全情報 — 渡航危険度マップ</h3>
-        <div class="bg-gray-800/60 border border-gray-700 rounded-lg p-4">
-          <img src="map.png" alt="日本外務省 海外安全情報 渡航危険度マップ" class="w-full h-auto rounded">
-          <p class="text-xs text-gray-500 mt-3 text-center">出典: 外務省 海外安全ホームページ</p>
+      <section id="section-map" class="mb-10">
+        <h3 id="section-map-title" class="text-lg font-semibold mb-4 text-blue-400">日本外務省 海外安全情報 — 渡航危険度マップ</h3>
+        <div id="section-map-body" class="bg-gray-800/60 border border-gray-700 rounded-lg p-4">
+          <img id="map-img" src="map.png" alt="日本外務省 海外安全情報 渡航危険度マップ" class="w-full h-auto rounded">
+          <p id="map-source" class="text-xs text-gray-500 mt-3 text-center">出典: 外務省 海外安全ホームページ</p>
         </div>
       </section>
 
       <!-- Section 3: 感染者数テーブル -->
-      <section class="mb-10">
-        <h2 class="text-xl font-bold mb-4 border-l-4 border-purple-500 pl-3">3. ニパウイルス感染者数テーブル（主要発生年）</h2>
-        <div class="overflow-x-auto">
-          <table class="w-full text-sm border-collapse text-center">
-            <thead>
+      <section id="section-3" class="mb-10">
+        <h2 id="section-3-title" class="text-xl font-bold mb-4 border-l-4 border-purple-500 pl-3">3. ニパウイルス感染者数テーブル（主要発生年）</h2>
+        <div id="section-3-table-wrap" class="overflow-x-auto">
+          <table id="table-cases" class="w-full text-sm border-collapse text-center">
+            <thead id="table-cases-head">
               <tr class="border-b border-gray-600">
                 <th class="py-3 px-3 text-gray-400 font-semibold text-left">西暦</th>
                 <th class="py-3 px-3 text-gray-400 font-semibold">マレーシア</th>
@@ -123,8 +123,8 @@
                 <th class="py-3 px-3 text-gray-400 font-semibold">フィリピン</th>
               </tr>
             </thead>
-            <tbody>
-              <tr class="border-b border-gray-700/50">
+            <tbody id="table-cases-body">
+              <tr id="row-1998" class="border-b border-gray-700/50">
                 <td class="py-3 px-3 text-left font-semibold text-white">1998-99</td>
                 <td class="py-3 px-3 text-red-400 font-semibold">265</td>
                 <td class="py-3 px-3 text-red-400">11</td>
@@ -132,7 +132,7 @@
                 <td class="py-3 px-3 text-gray-600">-</td>
                 <td class="py-3 px-3 text-gray-600">-</td>
               </tr>
-              <tr class="border-b border-gray-700/50">
+              <tr id="row-2001" class="border-b border-gray-700/50">
                 <td class="py-3 px-3 text-left font-semibold text-white">2001</td>
                 <td class="py-3 px-3 text-gray-600">-</td>
                 <td class="py-3 px-3 text-gray-600">-</td>
@@ -140,7 +140,7 @@
                 <td class="py-3 px-3 text-red-400 font-semibold">66</td>
                 <td class="py-3 px-3 text-gray-600">-</td>
               </tr>
-              <tr class="border-b border-gray-700/50">
+              <tr id="row-2014" class="border-b border-gray-700/50">
                 <td class="py-3 px-3 text-left font-semibold text-white">2014</td>
                 <td class="py-3 px-3 text-gray-600">-</td>
                 <td class="py-3 px-3 text-gray-600">-</td>
@@ -148,7 +148,7 @@
                 <td class="py-3 px-3 text-gray-600">-</td>
                 <td class="py-3 px-3 text-red-400">17</td>
               </tr>
-              <tr class="border-b border-gray-700/50">
+              <tr id="row-2018" class="border-b border-gray-700/50">
                 <td class="py-3 px-3 text-left font-semibold text-white">2018</td>
                 <td class="py-3 px-3 text-gray-600">-</td>
                 <td class="py-3 px-3 text-gray-600">-</td>
@@ -156,7 +156,7 @@
                 <td class="py-3 px-3 text-red-400">19</td>
                 <td class="py-3 px-3 text-gray-600">-</td>
               </tr>
-              <tr class="border-b border-gray-700/50">
+              <tr id="row-2023" class="border-b border-gray-700/50">
                 <td class="py-3 px-3 text-left font-semibold text-white">2023</td>
                 <td class="py-3 px-3 text-gray-600">-</td>
                 <td class="py-3 px-3 text-gray-600">-</td>
@@ -164,7 +164,7 @@
                 <td class="py-3 px-3 text-red-400">6</td>
                 <td class="py-3 px-3 text-gray-600">-</td>
               </tr>
-              <tr class="border-b border-gray-700/50">
+              <tr id="row-2024" class="border-b border-gray-700/50">
                 <td class="py-3 px-3 text-left font-semibold text-white">2024</td>
                 <td class="py-3 px-3 text-gray-600">-</td>
                 <td class="py-3 px-3 text-gray-600">-</td>
@@ -172,7 +172,7 @@
                 <td class="py-3 px-3 text-red-400">6</td>
                 <td class="py-3 px-3 text-gray-600">-</td>
               </tr>
-              <tr class="border-b border-gray-700/50">
+              <tr id="row-2025" class="border-b border-gray-700/50">
                 <td class="py-3 px-3 text-left font-semibold text-white">2025</td>
                 <td class="py-3 px-3 text-gray-600">-</td>
                 <td class="py-3 px-3 text-gray-600">-</td>
@@ -180,7 +180,7 @@
                 <td class="py-3 px-3 text-gray-600">-</td>
                 <td class="py-3 px-3 text-gray-600">-</td>
               </tr>
-              <tr class="border-b border-gray-700/50 bg-red-500/10">
+              <tr id="row-2026" class="border-b border-gray-700/50 bg-red-500/10">
                 <td class="py-3 px-3 text-left font-semibold text-white">2026 (Jan)</td>
                 <td class="py-3 px-3 text-gray-600">-</td>
                 <td class="py-3 px-3 text-gray-600">-</td>
@@ -194,37 +194,37 @@
       </section>
 
       <!-- Section 4: 予防ガイドライン -->
-      <section class="mb-10">
-        <h2 class="text-xl font-bold mb-4 border-l-4 border-yellow-500 pl-3">4. NiV 予防ガイドライン：エビデンスに基づく対策</h2>
-        <div class="bg-gray-800/60 border border-gray-700 rounded-lg p-6 mb-6">
+      <section id="section-4" class="mb-10">
+        <h2 id="section-4-title" class="text-xl font-bold mb-4 border-l-4 border-yellow-500 pl-3">4. NiV 予防ガイドライン：エビデンスに基づく対策</h2>
+        <div id="section-4-intro" class="bg-gray-800/60 border border-gray-700 rounded-lg p-6 mb-6">
           <p class="text-gray-300">
             ニパウイルスは非常に致死率が高く（40-75%）、現時点で有効なワクチンや治療薬が承認されていないため、<span class="text-yellow-400 font-semibold">「物理的な遮断」</span>と<span class="text-yellow-400 font-semibold">「衛生管理」</span>が唯一の防御手段です。
           </p>
         </div>
 
         <!-- 4-1: 物理的な防護策 -->
-        <h3 class="text-lg font-semibold mb-3 text-yellow-400">4-1. 物理的な防護策（マスク・手洗い・うがい）の効果</h3>
-        <div class="overflow-x-auto mb-4">
-          <table class="w-full text-sm border-collapse">
-            <thead>
+        <h3 id="section-4-1-title" class="text-lg font-semibold mb-3 text-yellow-400">4-1. 物理的な防護策（マスク・手洗い・うがい）の効果</h3>
+        <div id="section-4-1-table-wrap" class="overflow-x-auto mb-4">
+          <table id="table-protection" class="w-full text-sm border-collapse">
+            <thead id="table-protection-head">
               <tr class="border-b border-gray-600">
                 <th class="text-left py-3 px-4 text-gray-400 font-semibold">対策項目</th>
                 <th class="text-center py-3 px-4 text-gray-400 font-semibold">効果の強さ</th>
                 <th class="text-left py-3 px-4 text-gray-400 font-semibold">根拠と詳細</th>
               </tr>
             </thead>
-            <tbody>
-              <tr class="border-b border-gray-700/50">
+            <tbody id="table-protection-body">
+              <tr id="row-handwash" class="border-b border-gray-700/50">
                 <td class="py-3 px-4 font-semibold text-white">手洗い（石鹸）</td>
                 <td class="py-3 px-4 text-center"><span class="bg-red-500/20 text-red-400 px-2 py-1 rounded text-xs font-bold">特大</span></td>
                 <td class="py-3 px-4 text-gray-300">ニパウイルスは「エンベロープ（脂質の膜）」を持つウイルスです。石鹸やアルコールは膜を破壊するため、<span class="text-white font-semibold">非常に高い不活化効果</span>があります。</td>
               </tr>
-              <tr class="border-b border-gray-700/50">
+              <tr id="row-mask" class="border-b border-gray-700/50">
                 <td class="py-3 px-4 font-semibold text-white">マスク (N95/サージカル)</td>
                 <td class="py-3 px-4 text-center"><span class="bg-orange-500/20 text-orange-400 px-2 py-1 rounded text-xs font-bold">大</span></td>
                 <td class="py-3 px-4 text-gray-300">ヒトからヒトへの感染は主に<span class="text-white font-semibold">飛沫（Droplet）</span>を介します。医療現場や密閉された空間での飛沫吸入を防ぐために強く推奨されます。</td>
               </tr>
-              <tr class="border-b border-gray-700/50">
+              <tr id="row-gargle" class="border-b border-gray-700/50">
                 <td class="py-3 px-4 font-semibold text-white">うがい</td>
                 <td class="py-3 px-4 text-center"><span class="bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded text-xs font-bold">中〜小</span></td>
                 <td class="py-3 px-4 text-gray-300">呼吸器感染症全般（インフルエンザ等）の予防効果は論文で示されていますが、ニパウイルスに特化した高い予防エビデンスは限定的です。補助的手段と考えましょう。</td>
@@ -232,14 +232,14 @@
             </tbody>
           </table>
         </div>
-        <div class="bg-blue-500/10 border border-blue-500/30 rounded-lg p-5 mb-6">
-          <h4 class="text-sm font-semibold text-blue-400 mb-2">&#x1F4A1; 論文・統計的背景</h4>
-          <ul class="space-y-2 text-sm text-gray-300">
-            <li class="flex items-start gap-2">
+        <div id="note-research" class="bg-blue-500/10 border border-blue-500/30 rounded-lg p-5 mb-6">
+          <h4 id="note-research-title" class="text-sm font-semibold text-blue-400 mb-2">&#x1F4A1; 論文・統計的背景</h4>
+          <ul id="note-research-list" class="space-y-2 text-sm text-gray-300">
+            <li id="note-ipc" class="flex items-start gap-2">
               <span class="text-blue-400 mt-1">&#x25CF;</span>
               <div><span class="text-white font-semibold">IPC（感染予防管理）の実践:</span> 2025-2026年の研究レビュー（Pritchard &amp; Hornsey等）では、医療従事者のPPE（個人用防護具）着用が院内感染を劇的に抑えることが再確認されています。</div>
             </li>
-            <li class="flex items-start gap-2">
+            <li id="note-soap" class="flex items-start gap-2">
               <span class="text-blue-400 mt-1">&#x25CF;</span>
               <div><span class="text-white font-semibold">石鹸の効果:</span> ニパウイルスのようなヘニパウイルス属は、環境中では比較的弱く、一般的な消毒剤（70%アルコール、次亜塩素酸ナトリウム、石鹸）で容易に死滅します。</div>
             </li>
@@ -247,22 +247,22 @@
         </div>
 
         <!-- 4-2: 経路別予防策 -->
-        <h3 class="text-lg font-semibold mb-3 text-yellow-400">4-2. 最も重要な「経路別」予防策</h3>
-        <p class="text-gray-400 text-sm mb-4">ニパウイルスに特有の感染経路を防ぐことが、一般的な風邪対策よりも重要です。</p>
+        <h3 id="section-4-2-title" class="text-lg font-semibold mb-3 text-yellow-400">4-2. 最も重要な「経路別」予防策</h3>
+        <p id="section-4-2-intro" class="text-gray-400 text-sm mb-4">ニパウイルスに特有の感染経路を防ぐことが、一般的な風邪対策よりも重要です。</p>
 
         <!-- ① 飲食物 -->
-        <div class="bg-gray-800/60 border border-gray-700 rounded-lg p-5 mb-4">
-          <h4 class="text-base font-semibold text-white mb-3">&#x2460; 飲食物の汚染を防ぐ（最優先）</h4>
-          <ul class="space-y-2 text-sm text-gray-300">
-            <li class="flex items-start gap-2">
+        <div id="route-food" class="bg-gray-800/60 border border-gray-700 rounded-lg p-5 mb-4">
+          <h4 id="route-food-title" class="text-base font-semibold text-white mb-3">&#x2460; 飲食物の汚染を防ぐ（最優先）</h4>
+          <ul id="route-food-list" class="space-y-2 text-sm text-gray-300">
+            <li id="route-food-sap" class="flex items-start gap-2">
               <span class="text-red-400 mt-1">&#x25CF;</span>
               <div><span class="text-white font-semibold">生樹液を飲まない:</span> バングラデシュ等の流行地では、オオコウモリの唾液や尿で汚染された「生のナツメヤシ樹液」が最大の感染源です。</div>
             </li>
-            <li class="flex items-start gap-2">
+            <li id="route-food-fruit" class="flex items-start gap-2">
               <span class="text-red-400 mt-1">&#x25CF;</span>
               <div><span class="text-white font-semibold">果物の選別:</span> コウモリがかじった跡のある果物や、地面に落ちている果物は絶対に食べないでください。</div>
             </li>
-            <li class="flex items-start gap-2">
+            <li id="route-food-wash" class="flex items-start gap-2">
               <span class="text-red-400 mt-1">&#x25CF;</span>
               <div><span class="text-white font-semibold">果物の洗浄と皮剥き:</span> 食べる前には必ず流水でよく洗い、可能であれば皮を剥いて摂取してください。</div>
             </li>
@@ -270,14 +270,14 @@
         </div>
 
         <!-- ② 動物 -->
-        <div class="bg-gray-800/60 border border-gray-700 rounded-lg p-5 mb-4">
-          <h4 class="text-base font-semibold text-white mb-3">&#x2461; 動物との接触を避ける</h4>
-          <ul class="space-y-2 text-sm text-gray-300">
-            <li class="flex items-start gap-2">
+        <div id="route-animal" class="bg-gray-800/60 border border-gray-700 rounded-lg p-5 mb-4">
+          <h4 id="route-animal-title" class="text-base font-semibold text-white mb-3">&#x2461; 動物との接触を避ける</h4>
+          <ul id="route-animal-list" class="space-y-2 text-sm text-gray-300">
+            <li id="route-animal-bat" class="flex items-start gap-2">
               <span class="text-red-400 mt-1">&#x25CF;</span>
               <div><span class="text-white font-semibold">自然宿主:</span> オオコウモリ（フルーツバット）の生息地に近づかないこと。</div>
             </li>
-            <li class="flex items-start gap-2">
+            <li id="route-animal-pig" class="flex items-start gap-2">
               <span class="text-red-400 mt-1">&#x25CF;</span>
               <div><span class="text-white font-semibold">中間宿主:</span> 過去にマレーシアで流行した際は「豚」が媒介しました。流行地域では家畜（豚、馬、犬など）との不要な接触を避けてください。</div>
             </li>
@@ -285,14 +285,14 @@
         </div>
 
         <!-- ③ ヒトからヒト -->
-        <div class="bg-gray-800/60 border border-gray-700 rounded-lg p-5 mb-6">
-          <h4 class="text-base font-semibold text-white mb-3">&#x2462; ヒトからヒトへの感染を防ぐ</h4>
-          <ul class="space-y-2 text-sm text-gray-300">
-            <li class="flex items-start gap-2">
+        <div id="route-human" class="bg-gray-800/60 border border-gray-700 rounded-lg p-5 mb-6">
+          <h4 id="route-human-title" class="text-base font-semibold text-white mb-3">&#x2462; ヒトからヒトへの感染を防ぐ</h4>
+          <ul id="route-human-list" class="space-y-2 text-sm text-gray-300">
+            <li id="route-human-contact" class="flex items-start gap-2">
               <span class="text-red-400 mt-1">&#x25CF;</span>
               <div><span class="text-white font-semibold">濃厚接触の回避:</span> 感染者の体液（血液、尿、唾液）には強い感染力があります。</div>
             </li>
-            <li class="flex items-start gap-2">
+            <li id="route-human-deceased" class="flex items-start gap-2">
               <span class="text-red-400 mt-1">&#x25CF;</span>
               <div><span class="text-white font-semibold">死者との接触:</span> 葬儀等で遺体に触れる行為もリスクが高いため、流行地では伝統的な儀式においても注意が必要です。</div>
             </li>
@@ -300,25 +300,25 @@
         </div>
 
         <!-- 4-3: 実務的アドバイス -->
-        <h3 class="text-lg font-semibold mb-3 text-yellow-400">4-3. 実務的アドバイス（PM・ビジネス渡航者向け）</h3>
-        <p class="text-gray-400 text-sm mb-4">ホーチミン拠点のPMとして、チームや自身を守るための具体的なアクションは以下の通りです。</p>
-        <div class="bg-gray-800/60 border border-gray-700 rounded-lg p-6">
-          <ol class="space-y-4">
-            <li class="flex items-start gap-3">
+        <h3 id="section-4-3-title" class="text-lg font-semibold mb-3 text-yellow-400">4-3. 実務的アドバイス（PM・ビジネス渡航者向け）</h3>
+        <p id="section-4-3-intro" class="text-gray-400 text-sm mb-4">ホーチミン拠点のPMとして、チームや自身を守るための具体的なアクションは以下の通りです。</p>
+        <div id="advice" class="bg-gray-800/60 border border-gray-700 rounded-lg p-6">
+          <ol id="advice-list" class="space-y-4">
+            <li id="advice-hygiene" class="flex items-start gap-3">
               <span class="bg-yellow-500/20 text-yellow-400 rounded-full w-7 h-7 flex items-center justify-center flex-shrink-0 text-sm font-bold">1</span>
               <div>
                 <span class="text-white font-semibold">「手洗い・消毒」をデフォルトにする:</span>
                 <span class="text-gray-300"> オフィス入り口や共有スペースにアルコール消毒液を設置。これはデング熱や他の感染症対策としても有効です。</span>
               </div>
             </li>
-            <li class="flex items-start gap-3">
+            <li id="advice-monitor" class="flex items-start gap-3">
               <span class="bg-yellow-500/20 text-yellow-400 rounded-full w-7 h-7 flex items-center justify-center flex-shrink-0 text-sm font-bold">2</span>
               <div>
                 <span class="text-white font-semibold">流行情報の監視:</span>
                 <span class="text-gray-300"> WHOや現地の保健省（ベトナムならMoH）の発表を週1回程度チェックする。</span>
               </div>
             </li>
-            <li class="flex items-start gap-3">
+            <li id="advice-isolate" class="flex items-start gap-3">
               <span class="bg-yellow-500/20 text-yellow-400 rounded-full w-7 h-7 flex items-center justify-center flex-shrink-0 text-sm font-bold">3</span>
               <div>
                 <span class="text-white font-semibold">体調不良者の早期隔離:</span>
@@ -330,10 +330,10 @@
       </section>
 
       <!-- Footer Info -->
-      <div class="border-t border-gray-700 pt-6 mt-10 text-center text-xs text-gray-500">
-        <p><span class="text-gray-400">作成日:</span> 2026年1月31日</p>
-        <p class="mt-1"><span class="text-gray-400">ソース:</span> WHO, インド保健省, 日本外務省, ベトナム保健省(MoH) 公開情報に基づく</p>
-        <p class="mt-1"><span class="text-gray-400">参考資料:</span> WHO Fact Sheets: Nipah virus (Updated 2025/2026), CDC: Nipah Virus (NiV) Prevention, "The role of IPC in the mitigation of human-to-human transmission of Nipah virus" (2025 Systematic Review)</p>
+      <div id="footer" class="border-t border-gray-700 pt-6 mt-10 text-center text-xs text-gray-500">
+        <p id="footer-date"><span class="text-gray-400">作成日:</span> 2026年1月31日</p>
+        <p id="footer-source" class="mt-1"><span class="text-gray-400">ソース:</span> WHO, インド保健省, 日本外務省, ベトナム保健省(MoH) 公開情報に基づく</p>
+        <p id="footer-refs" class="mt-1"><span class="text-gray-400">参考資料:</span> WHO Fact Sheets: Nipah virus (Updated 2025/2026), CDC: Nipah Virus (NiV) Prevention, "The role of IPC in the mitigation of human-to-human transmission of Nipah virus" (2025 Systematic Review)</p>
       </div>
 
     </div>

@@ -35,21 +35,21 @@
 </head>
 <body class="bg-gray-900 text-white min-h-screen">
   <!-- Header -->
-  <header class="fixed top-0 left-0 right-0 bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-700">
-    <div class="max-w-4xl mx-auto px-4 py-4">
-      <h1 class="text-2xl font-bold text-center bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+  <header id="header" class="fixed top-0 left-0 right-0 bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-700">
+    <div id="header-inner" class="max-w-4xl mx-auto px-4 py-4">
+      <h1 id="title" class="text-2xl font-bold text-center bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
         旅行スケジュール 2026年2月
       </h1>
-      <div class="flex justify-center gap-8 mt-2 text-sm">
-        <div class="flex items-center gap-2">
+      <div id="legend" class="flex justify-center gap-8 mt-2 text-sm">
+        <div id="legend-atsushi" class="flex items-center gap-2">
           <span class="w-3 h-3 bg-blue-500 rounded-full"></span>
           <span class="text-gray-400">ATSUSHI</span>
         </div>
-        <div class="flex items-center gap-2">
+        <div id="legend-haruka" class="flex items-center gap-2">
           <span class="w-3 h-3 bg-pink-500 rounded-full"></span>
           <span class="text-gray-400">HARUKA</span>
         </div>
-        <a href="nipah-report.html" class="flex items-center gap-1 text-red-400 hover:text-red-300 transition-colors border border-red-500/30 rounded-full px-3 py-0.5">
+        <a id="link-niv" href="nipah-report.html" class="flex items-center gap-1 text-red-400 hover:text-red-300 transition-colors border border-red-500/30 rounded-full px-3 py-0.5">
           <span class="text-xs">&#x1F9A0;</span>
           <span>NiVレポート</span>
         </a>
@@ -58,277 +58,277 @@
   </header>
 
   <!-- Timeline -->
-  <main class="pt-28 pb-20 relative">
-    <div class="max-w-4xl mx-auto px-4 relative">
+  <main id="timeline" class="pt-28 pb-20 relative">
+    <div id="timeline-container" class="max-w-4xl mx-auto px-4 relative">
       <!-- Center Line -->
-      <div class="timeline-line"></div>
+      <div id="timeline-line" class="timeline-line"></div>
 
       <!-- 2/10 (火) -->
-      <div class="relative grid grid-cols-2 min-h-32 py-8">
-        <div class="schedule-left">
-          <div class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
-            <div class="text-blue-400 font-semibold mb-1">HCMC → チェンナイ</div>
-            <div class="text-sm text-gray-300">AirAsia AK525 / AK11</div>
-            <div class="text-xs text-gray-500 mt-2">免許更新 → 20:15 SGN発（KUL経由）</div>
+      <div id="day-0210" class="relative grid grid-cols-2 min-h-32 py-8">
+        <div id="day-0210-left" class="schedule-left">
+          <div id="day-0210-left-card" class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
+            <div id="day-0210-left-title" class="text-blue-400 font-semibold mb-1">HCMC → チェンナイ</div>
+            <div id="day-0210-left-detail" class="text-sm text-gray-300">AirAsia AK525 / AK11</div>
+            <div id="day-0210-left-note" class="text-xs text-gray-500 mt-2">免許更新 → 20:15 SGN発（KUL経由）</div>
           </div>
         </div>
-        <div class="date-marker top-8">
+        <div id="day-0210-marker" class="date-marker top-8">
           <div class="bg-gray-800 border-2 border-purple-500 rounded-full px-4 py-2 text-center">
             <div class="text-lg font-bold">2/10</div>
             <div class="text-xs text-gray-400">火</div>
           </div>
         </div>
-        <div class="schedule-right">
+        <div id="day-0210-right" class="schedule-right">
           <div class="text-gray-600 italic text-sm pt-4">予定なし</div>
         </div>
       </div>
 
       <!-- 2/11 (水) -->
-      <div class="relative grid grid-cols-2 min-h-32 py-8">
-        <div class="schedule-left">
-          <div class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
-            <div class="text-blue-400 font-semibold mb-1">チェンナイ到着</div>
-            <div class="text-sm text-gray-300">07:25 MAA着</div>
-            <div class="text-xs text-gray-500 mt-2">南インド / アガスティア</div>
+      <div id="day-0211" class="relative grid grid-cols-2 min-h-32 py-8">
+        <div id="day-0211-left" class="schedule-left">
+          <div id="day-0211-left-card" class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
+            <div id="day-0211-left-title" class="text-blue-400 font-semibold mb-1">チェンナイ到着</div>
+            <div id="day-0211-left-detail" class="text-sm text-gray-300">07:25 MAA着</div>
+            <div id="day-0211-left-note" class="text-xs text-gray-500 mt-2">南インド / アガスティア</div>
           </div>
         </div>
-        <div class="date-marker top-8">
+        <div id="day-0211-marker" class="date-marker top-8">
           <div class="bg-gray-800 border-2 border-purple-500 rounded-full px-4 py-2 text-center">
             <div class="text-lg font-bold">2/11</div>
             <div class="text-xs text-gray-400">水</div>
           </div>
         </div>
-        <div class="schedule-right">
+        <div id="day-0211-right" class="schedule-right">
           <div class="text-gray-600 italic text-sm pt-4">予定なし</div>
         </div>
       </div>
 
       <!-- 2/12 (木) -->
-      <div class="relative grid grid-cols-2 min-h-32 py-8">
-        <div class="schedule-left">
-          <div class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
-            <div class="text-blue-400 font-semibold mb-1">南インド滞在</div>
-            <div class="text-sm text-gray-300">アガスティア</div>
+      <div id="day-0212" class="relative grid grid-cols-2 min-h-32 py-8">
+        <div id="day-0212-left" class="schedule-left">
+          <div id="day-0212-left-card" class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
+            <div id="day-0212-left-title" class="text-blue-400 font-semibold mb-1">南インド滞在</div>
+            <div id="day-0212-left-detail" class="text-sm text-gray-300">アガスティア</div>
           </div>
         </div>
-        <div class="date-marker top-8">
+        <div id="day-0212-marker" class="date-marker top-8">
           <div class="bg-gray-800 border-2 border-purple-500 rounded-full px-4 py-2 text-center">
             <div class="text-lg font-bold">2/12</div>
             <div class="text-xs text-gray-400">木</div>
           </div>
         </div>
-        <div class="schedule-right">
+        <div id="day-0212-right" class="schedule-right">
           <div class="text-gray-600 italic text-sm pt-4">予定なし</div>
         </div>
       </div>
 
       <!-- 2/13 (金) -->
-      <div class="relative grid grid-cols-2 min-h-32 py-8">
-        <div class="schedule-left">
-          <div class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
-            <div class="text-blue-400 font-semibold mb-1">✈️ チェンナイ → ダッカ</div>
-            <div class="text-sm text-gray-300">バングラデシュ入国</div>
-            <div class="text-xs text-gray-500 mt-2">ラールバーグ城</div>
+      <div id="day-0213" class="relative grid grid-cols-2 min-h-32 py-8">
+        <div id="day-0213-left" class="schedule-left">
+          <div id="day-0213-left-card" class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
+            <div id="day-0213-left-title" class="text-blue-400 font-semibold mb-1">✈️ チェンナイ → ダッカ</div>
+            <div id="day-0213-left-detail" class="text-sm text-gray-300">バングラデシュ入国</div>
+            <div id="day-0213-left-note" class="text-xs text-gray-500 mt-2">ラールバーグ城</div>
           </div>
         </div>
-        <div class="date-marker top-8">
+        <div id="day-0213-marker" class="date-marker top-8">
           <div class="bg-gray-800 border-2 border-purple-500 rounded-full px-4 py-2 text-center">
             <div class="text-lg font-bold">2/13</div>
             <div class="text-xs text-gray-400">金</div>
           </div>
         </div>
-        <div class="schedule-right">
+        <div id="day-0213-right" class="schedule-right">
           <div class="text-gray-600 italic text-sm pt-4">予定なし</div>
         </div>
       </div>
 
       <!-- 2/14 (土) -->
-      <div class="relative grid grid-cols-2 min-h-32 py-8">
-        <div class="schedule-left">
-          <div class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
-            <div class="text-blue-400 font-semibold mb-1">ダッカ滞在</div>
-            <div class="text-sm text-gray-300">ラールバーグ城</div>
+      <div id="day-0214" class="relative grid grid-cols-2 min-h-32 py-8">
+        <div id="day-0214-left" class="schedule-left">
+          <div id="day-0214-left-card" class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
+            <div id="day-0214-left-title" class="text-blue-400 font-semibold mb-1">ダッカ滞在</div>
+            <div id="day-0214-left-detail" class="text-sm text-gray-300">ラールバーグ城</div>
           </div>
         </div>
-        <div class="date-marker top-8">
+        <div id="day-0214-marker" class="date-marker top-8">
           <div class="bg-gray-800 border-2 border-purple-500 rounded-full px-4 py-2 text-center">
             <div class="text-lg font-bold">2/14</div>
             <div class="text-xs text-gray-400">土</div>
           </div>
         </div>
-        <div class="schedule-right">
+        <div id="day-0214-right" class="schedule-right">
           <div class="text-gray-600 italic text-sm pt-4">予定なし</div>
         </div>
       </div>
 
       <!-- 2/15 (日) -->
-      <div class="relative grid grid-cols-2 min-h-32 py-8">
-        <div class="schedule-left">
-          <div class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
-            <div class="text-blue-400 font-semibold mb-1">🚃 ダッカ → ジャイプールハット</div>
-            <div class="text-sm text-gray-300">パハルプール方面</div>
+      <div id="day-0215" class="relative grid grid-cols-2 min-h-32 py-8">
+        <div id="day-0215-left" class="schedule-left">
+          <div id="day-0215-left-card" class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
+            <div id="day-0215-left-title" class="text-blue-400 font-semibold mb-1">🚃 ダッカ → ジャイプールハット</div>
+            <div id="day-0215-left-detail" class="text-sm text-gray-300">パハルプール方面</div>
           </div>
         </div>
-        <div class="date-marker top-8">
+        <div id="day-0215-marker" class="date-marker top-8">
           <div class="bg-gray-800 border-2 border-purple-500 rounded-full px-4 py-2 text-center">
             <div class="text-lg font-bold">2/15</div>
             <div class="text-xs text-gray-400">日</div>
           </div>
         </div>
-        <div class="schedule-right">
+        <div id="day-0215-right" class="schedule-right">
           <div class="text-gray-600 italic text-sm pt-4">予定なし</div>
         </div>
       </div>
 
       <!-- 2/16 (月) - 合流日 -->
-      <div class="relative grid grid-cols-2 min-h-40 py-8">
-        <div class="schedule-left">
-          <div class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
-            <div class="text-blue-400 font-semibold mb-1">パハルプール観光</div>
-            <div class="text-sm text-gray-300">✈️ バングラデシュ → ブッダガヤ</div>
-            <div class="text-xs text-gray-500 mt-2">インド再入国</div>
+      <div id="day-0216" class="relative grid grid-cols-2 min-h-40 py-8">
+        <div id="day-0216-left" class="schedule-left">
+          <div id="day-0216-left-card" class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
+            <div id="day-0216-left-title" class="text-blue-400 font-semibold mb-1">パハルプール観光</div>
+            <div id="day-0216-left-detail" class="text-sm text-gray-300">✈️ バングラデシュ → ブッダガヤ</div>
+            <div id="day-0216-left-note" class="text-xs text-gray-500 mt-2">インド再入国</div>
           </div>
         </div>
-        <div class="date-marker top-8">
+        <div id="day-0216-marker" class="date-marker top-8">
           <div class="bg-gradient-to-br from-blue-500 to-pink-500 rounded-full px-4 py-2 text-center shadow-lg shadow-purple-500/30">
             <div class="text-lg font-bold">2/16</div>
             <div class="text-xs">月</div>
             <div class="text-xs mt-1 font-semibold">合流</div>
           </div>
         </div>
-        <div class="schedule-right">
-          <div class="bg-pink-500/20 border border-pink-500/50 rounded-lg p-4 inline-block max-w-xs">
-            <div class="text-pink-400 font-semibold mb-1">HCMC → ブッダガヤ</div>
-            <div class="text-sm text-gray-300">合流予定</div>
+        <div id="day-0216-right" class="schedule-right">
+          <div id="day-0216-right-card" class="bg-pink-500/20 border border-pink-500/50 rounded-lg p-4 inline-block max-w-xs">
+            <div id="day-0216-right-title" class="text-pink-400 font-semibold mb-1">HCMC → ブッダガヤ</div>
+            <div id="day-0216-right-detail" class="text-sm text-gray-300">合流予定</div>
           </div>
         </div>
       </div>
 
       <!-- 2/17 (火) -->
-      <div class="relative grid grid-cols-2 min-h-32 py-8">
-        <div class="schedule-left">
-          <div class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
-            <div class="text-blue-400 font-semibold mb-1">ブッダガヤ滞在</div>
-            <div class="text-sm text-gray-300">ナーランダー</div>
+      <div id="day-0217" class="relative grid grid-cols-2 min-h-32 py-8">
+        <div id="day-0217-left" class="schedule-left">
+          <div id="day-0217-left-card" class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
+            <div id="day-0217-left-title" class="text-blue-400 font-semibold mb-1">ブッダガヤ滞在</div>
+            <div id="day-0217-left-detail" class="text-sm text-gray-300">ナーランダー</div>
           </div>
         </div>
-        <div class="date-marker top-8">
+        <div id="day-0217-marker" class="date-marker top-8">
           <div class="bg-gray-800 border-2 border-purple-500 rounded-full px-4 py-2 text-center">
             <div class="text-lg font-bold">2/17</div>
             <div class="text-xs text-gray-400">火</div>
           </div>
         </div>
-        <div class="schedule-right">
-          <div class="bg-pink-500/20 border border-pink-500/50 rounded-lg p-4 inline-block max-w-xs">
-            <div class="text-pink-400 font-semibold mb-1">ブッダガヤ滞在</div>
-            <div class="text-sm text-gray-300">ナーランダー</div>
+        <div id="day-0217-right" class="schedule-right">
+          <div id="day-0217-right-card" class="bg-pink-500/20 border border-pink-500/50 rounded-lg p-4 inline-block max-w-xs">
+            <div id="day-0217-right-title" class="text-pink-400 font-semibold mb-1">ブッダガヤ滞在</div>
+            <div id="day-0217-right-detail" class="text-sm text-gray-300">ナーランダー</div>
           </div>
         </div>
       </div>
 
       <!-- 2/18 (水) -->
-      <div class="relative grid grid-cols-2 min-h-32 py-8">
-        <div class="schedule-left">
-          <div class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
-            <div class="text-blue-400 font-semibold mb-1">ブッダガヤ滞在</div>
-            <div class="text-sm text-gray-300">ナーランダー</div>
+      <div id="day-0218" class="relative grid grid-cols-2 min-h-32 py-8">
+        <div id="day-0218-left" class="schedule-left">
+          <div id="day-0218-left-card" class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
+            <div id="day-0218-left-title" class="text-blue-400 font-semibold mb-1">ブッダガヤ滞在</div>
+            <div id="day-0218-left-detail" class="text-sm text-gray-300">ナーランダー</div>
           </div>
         </div>
-        <div class="date-marker top-8">
+        <div id="day-0218-marker" class="date-marker top-8">
           <div class="bg-gray-800 border-2 border-purple-500 rounded-full px-4 py-2 text-center">
             <div class="text-lg font-bold">2/18</div>
             <div class="text-xs text-gray-400">水</div>
           </div>
         </div>
-        <div class="schedule-right">
-          <div class="bg-pink-500/20 border border-pink-500/50 rounded-lg p-4 inline-block max-w-xs">
-            <div class="text-pink-400 font-semibold mb-1">ブッダガヤ滞在</div>
-            <div class="text-sm text-gray-300">ナーランダー</div>
+        <div id="day-0218-right" class="schedule-right">
+          <div id="day-0218-right-card" class="bg-pink-500/20 border border-pink-500/50 rounded-lg p-4 inline-block max-w-xs">
+            <div id="day-0218-right-title" class="text-pink-400 font-semibold mb-1">ブッダガヤ滞在</div>
+            <div id="day-0218-right-detail" class="text-sm text-gray-300">ナーランダー</div>
           </div>
         </div>
       </div>
 
       <!-- 2/19 (木) -->
-      <div class="relative grid grid-cols-2 min-h-32 py-8">
-        <div class="schedule-left">
-          <div class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
-            <div class="text-blue-400 font-semibold mb-1">🚃 ガヤー → シリグリ</div>
-            <div class="text-sm text-gray-300">西ベンガル州</div>
+      <div id="day-0219" class="relative grid grid-cols-2 min-h-32 py-8">
+        <div id="day-0219-left" class="schedule-left">
+          <div id="day-0219-left-card" class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
+            <div id="day-0219-left-title" class="text-blue-400 font-semibold mb-1">🚃 ガヤー → シリグリ</div>
+            <div id="day-0219-left-detail" class="text-sm text-gray-300">西ベンガル州</div>
           </div>
         </div>
-        <div class="date-marker top-8">
+        <div id="day-0219-marker" class="date-marker top-8">
           <div class="bg-gray-800 border-2 border-purple-500 rounded-full px-4 py-2 text-center">
             <div class="text-lg font-bold">2/19</div>
             <div class="text-xs text-gray-400">木</div>
           </div>
         </div>
-        <div class="schedule-right">
-          <div class="bg-pink-500/20 border border-pink-500/50 rounded-lg p-4 inline-block max-w-xs">
-            <div class="text-pink-400 font-semibold mb-1">🚃 ガヤー → シリグリ</div>
-            <div class="text-sm text-gray-300">西ベンガル州</div>
+        <div id="day-0219-right" class="schedule-right">
+          <div id="day-0219-right-card" class="bg-pink-500/20 border border-pink-500/50 rounded-lg p-4 inline-block max-w-xs">
+            <div id="day-0219-right-title" class="text-pink-400 font-semibold mb-1">🚃 ガヤー → シリグリ</div>
+            <div id="day-0219-right-detail" class="text-sm text-gray-300">西ベンガル州</div>
           </div>
         </div>
       </div>
 
       <!-- 2/20 (金) -->
-      <div class="relative grid grid-cols-2 min-h-32 py-8">
-        <div class="schedule-left">
-          <div class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
-            <div class="text-blue-400 font-semibold mb-1">ダージリン観光</div>
+      <div id="day-0220" class="relative grid grid-cols-2 min-h-32 py-8">
+        <div id="day-0220-left" class="schedule-left">
+          <div id="day-0220-left-card" class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
+            <div id="day-0220-left-title" class="text-blue-400 font-semibold mb-1">ダージリン観光</div>
           </div>
         </div>
-        <div class="date-marker top-8">
+        <div id="day-0220-marker" class="date-marker top-8">
           <div class="bg-gray-800 border-2 border-purple-500 rounded-full px-4 py-2 text-center">
             <div class="text-lg font-bold">2/20</div>
             <div class="text-xs text-gray-400">金</div>
           </div>
         </div>
-        <div class="schedule-right">
-          <div class="bg-pink-500/20 border border-pink-500/50 rounded-lg p-4 inline-block max-w-xs">
-            <div class="text-pink-400 font-semibold mb-1">ダージリン観光</div>
+        <div id="day-0220-right" class="schedule-right">
+          <div id="day-0220-right-card" class="bg-pink-500/20 border border-pink-500/50 rounded-lg p-4 inline-block max-w-xs">
+            <div id="day-0220-right-title" class="text-pink-400 font-semibold mb-1">ダージリン観光</div>
           </div>
         </div>
       </div>
 
       <!-- 2/21 (土) -->
-      <div class="relative grid grid-cols-2 min-h-32 py-8">
-        <div class="schedule-left">
-          <div class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
-            <div class="text-blue-400 font-semibold mb-1">🚙 ダージリン → プンツォリン</div>
-            <div class="text-sm text-gray-300">ブータン国境</div>
-            <div class="text-xs text-gray-500 mt-2">ブータン入国</div>
+      <div id="day-0221" class="relative grid grid-cols-2 min-h-32 py-8">
+        <div id="day-0221-left" class="schedule-left">
+          <div id="day-0221-left-card" class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
+            <div id="day-0221-left-title" class="text-blue-400 font-semibold mb-1">🚙 ダージリン → プンツォリン</div>
+            <div id="day-0221-left-detail" class="text-sm text-gray-300">ブータン国境</div>
+            <div id="day-0221-left-note" class="text-xs text-gray-500 mt-2">ブータン入国</div>
           </div>
         </div>
-        <div class="date-marker top-8">
+        <div id="day-0221-marker" class="date-marker top-8">
           <div class="bg-gray-800 border-2 border-green-500 rounded-full px-4 py-2 text-center">
             <div class="text-lg font-bold">2/21</div>
             <div class="text-xs text-gray-400">土</div>
           </div>
         </div>
-        <div class="schedule-right">
-          <div class="bg-pink-500/20 border border-pink-500/50 rounded-lg p-4 inline-block max-w-xs">
-            <div class="text-pink-400 font-semibold mb-1">🚙 ダージリン → プンツォリン</div>
-            <div class="text-sm text-gray-300">ブータン入国</div>
+        <div id="day-0221-right" class="schedule-right">
+          <div id="day-0221-right-card" class="bg-pink-500/20 border border-pink-500/50 rounded-lg p-4 inline-block max-w-xs">
+            <div id="day-0221-right-title" class="text-pink-400 font-semibold mb-1">🚙 ダージリン → プンツォリン</div>
+            <div id="day-0221-right-detail" class="text-sm text-gray-300">ブータン入国</div>
           </div>
         </div>
       </div>
 
       <!-- 2/22 (日)〜 -->
-      <div class="relative grid grid-cols-2 min-h-32 py-8">
-        <div class="schedule-left">
-          <div class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
-            <div class="text-blue-400 font-semibold mb-1">ブータン滞在</div>
+      <div id="day-0222" class="relative grid grid-cols-2 min-h-32 py-8">
+        <div id="day-0222-left" class="schedule-left">
+          <div id="day-0222-left-card" class="bg-blue-500/20 border border-blue-500/50 rounded-lg p-4 inline-block max-w-xs ml-auto">
+            <div id="day-0222-left-title" class="text-blue-400 font-semibold mb-1">ブータン滞在</div>
           </div>
         </div>
-        <div class="date-marker top-8">
+        <div id="day-0222-marker" class="date-marker top-8">
           <div class="bg-gray-800 border-2 border-green-500 rounded-full px-4 py-2 text-center">
             <div class="text-lg font-bold">2/22〜</div>
             <div class="text-xs text-gray-400">日</div>
           </div>
         </div>
-        <div class="schedule-right">
-          <div class="bg-pink-500/20 border border-pink-500/50 rounded-lg p-4 inline-block max-w-xs">
-            <div class="text-pink-400 font-semibold mb-1">ブータン滞在</div>
+        <div id="day-0222-right" class="schedule-right">
+          <div id="day-0222-right-card" class="bg-pink-500/20 border border-pink-500/50 rounded-lg p-4 inline-block max-w-xs">
+            <div id="day-0222-right-title" class="text-pink-400 font-semibold mb-1">ブータン滞在</div>
           </div>
         </div>
       </div>
@@ -337,16 +337,16 @@
   </main>
 
   <!-- Footer Info -->
-  <footer class="fixed bottom-0 left-0 right-0 bg-gray-900/95 backdrop-blur-sm border-t border-gray-700 py-3">
-    <div class="max-w-4xl mx-auto px-4">
-      <div class="flex flex-wrap justify-center gap-4 text-xs text-gray-500">
-        <div>
+  <footer id="footer" class="fixed bottom-0 left-0 right-0 bg-gray-900/95 backdrop-blur-sm border-t border-gray-700 py-3">
+    <div id="footer-inner" class="max-w-4xl mx-auto px-4">
+      <div id="footer-info" class="flex flex-wrap justify-center gap-4 text-xs text-gray-500">
+        <div id="footer-pnr">
           <span class="text-gray-400">予約番号:</span> TB56FP
         </div>
-        <div>
+        <div id="footer-airline">
           <span class="text-gray-400">航空会社:</span> AirAsia
         </div>
-        <div>
+        <div id="footer-baggage">
           <span class="text-gray-400">荷物:</span> 機内持ち込み7kgのみ
         </div>
       </div>
